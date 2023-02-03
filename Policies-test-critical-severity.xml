@@ -1,0 +1,1 @@
+<report tool="test" date="2020-01-01"><findings><finding severity="critical" type="container"><tool name="Custom Tool" category="foo" code="bar-" /></finding></findings></report>
