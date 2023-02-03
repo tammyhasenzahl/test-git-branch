@@ -1,0 +1,10 @@
+<report tool="test" date="2020-01-01">
+    <findings>
+        <finding severity="high" type="container">
+            <tool name="Custom Tool" category="foo" code="bar-42" />
+            <host>
+                <port num="5" />
+            </host>
+        </finding>
+    </findings>
+</report>
