@@ -44,6 +44,6 @@ In Jenkins,
 
 ## Installing an Unreleased Jenkins Plugin to Jenkins
 Jenkins Dashboard > Manage Jenkins > Plugin Manager >
-Advanced settings (left side) > Deploy Plugin > Choose File > browse to HPI being tested > click Deploy > restart Jenkins
+Advanced settings (left side) > Deploy Plugin > Choose File > browse to HPI being tested > click Deploy (wait for something about restarting Jenkins > restart Jenkins
 
 
