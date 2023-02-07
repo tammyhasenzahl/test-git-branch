@@ -33,7 +33,7 @@ In Jenkins,
 - Console output: analysis fails and build fails
 - Return to project: build fails (red "x")
 
-
+## Step 3: build fails because policy that is set to "break build" has a violation 
 In Jenkins,
 - Configure > Tool Output: (a) remove `Test-break-the-analysis.xml` and (b) add  `Policies-test-critical-severity.xml`
 - Save
