@@ -15,7 +15,7 @@ The Jenkins plugin has options to fail a build when (1) an analysis fails and/or
 - create a Freestyle or Pipeline project (Freestyle is easier/quicker)
 - configure (left side)
 - *Source Code Management section:* click "git"; URL: `https://github.com/tammyhasenzahl/test-git-branch/`; and Branch Specifier: `*/break-the-analysis`
-- *Post-build Actions section:* Publish to Code Dx. Requires: Code Dx URL, admin API key, and Code Dx project. Use the defaults except (a) delete `**` from "Source and Binary Files" and (b) check "Wait for analysis result".  Save.
+- *Post-build Actions section:* Publish to Code Dx. Requires: Code Dx URL, admin API key, and Code Dx project. Use the defaults except (a) delete `**` from "Source and Binary Files" and (b) check "Wait for analysis result".  Make sure "Policy Behavior/Break build Action" is "Mark Build as Failed". Save.
 
 ## Step 1: build passes because there's a successful analysis and no policy violation
 In Jenkins, 
