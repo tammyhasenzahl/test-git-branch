@@ -4,7 +4,7 @@
 The Jenkins plugin has options to fail a build when (1) an analysis fails and/or (2) a policy is violated. Additionally, there's a new option to include Git Source that is being tested. Specifically,  Git Source, Error Handling, and Policy Behavior are tested. Note: the source code in this repo is a small subset of Webgoat where the results only have Info, Low, and Medium results. 
 
 ## Set up
-1. In Code Dx, 
+1. In SRM, 
 - create a new project 
 - configure git for the new project: `https://github.com/tammyhasenzahl/test-git-branch/` with `break-the-analysis` branch
 - create policy: filter = "only critical and high severity"; fix by = "Not required"; and action = "Break build"; and assign to the new project 
@@ -13,9 +13,9 @@ The Jenkins plugin has options to fail a build when (1) an analysis fails and/or
 2. In Jenkins, 
 - use the latest Jenkins plugin build (unreleased), which is an HPI file (see notes about installing an HPI, below)
 - create a Freestyle or Pipeline project (Freestyle is easier/quicker)
-- configure (left side)
+- click *Configure* (left side)
 - *Source Code Management section:* click "git"; URL: `https://github.com/tammyhasenzahl/test-git-branch/`; and Branch Specifier: `*/break-the-analysis`
-- *Post-build Actions section:* Publish to Code Dx. Requires: Code Dx URL, admin API key, and Code Dx project. Use the defaults except (a) delete `**` from "Source and Binary Files" and (b) check "Wait for analysis result".  Make sure "Policy Behavior/Break build Action" is "Mark Build as Failed". Save.
+- *Post-build Actions section:* Publish to Code Dx. Requires: Code Dx URL, admin API key, and Code Dx project. Then (a) delete `**` from "Source and Binary Files"; (b) check "include git source" and "Specific Branch Name" is *break-the-analysis*; (c) no tool output files; (d) "Analysis Name" doesn't matter; (e) no Target or Base Branches; (f) "Error Handling" is *Mark Build as Failed*; (g) check "Wait for analysis result"; (h) "Policy Behavior/Break build Action" is "Mark Build as Failed"; (i) "Build Failure Conditions" and the rest are *None*; and (j) "Graph Options" is zero. Save.
 
 ## Step 1: build passes because there's a successful analysis and no policy violation
 In Jenkins, 
