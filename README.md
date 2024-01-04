@@ -40,6 +40,7 @@ In Jenkins,
 - Build Now
 - Console output: policy that is set to "break build" has a violation and build fails
 - Return to project: build fails (red "x")
+- note: in SRM, there's a red triangle icon indicating the policy failed
 
 ## Installing an Unreleased Jenkins Plugin (`.hpi`) to Jenkins
 Jenkins Dashboard > Manage Jenkins > Plugin Manager >
