@@ -9,6 +9,7 @@ The Jenkins plugin has options to fail a build when (1) an analysis fails and/or
 - configure git for the new project: `https://github.com/tammyhasenzahl/test-git-branch/` with `break-the-analysis` branch
 - create policy: filter = "only critical and high severity"; fix by = "Not required"; and action = "Break build"; and assign to the new project 
 - create an API key with admin privileges
+- if this is a fresh SRM analysis, enable the built-in tools
 
 2. In Jenkins, 
 - use the latest Jenkins plugin build (if unreleased, use the latest HPI file. See notes about installing an HPI, below)
