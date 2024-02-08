@@ -11,7 +11,7 @@ The Jenkins plugin has options to fail a build when (1) an analysis fails and/or
 - create an API key with admin privileges
 
 2. In Jenkins, 
-- use the latest Jenkins plugin build (unreleased), which is an HPI file (see notes about installing an HPI, below)
+- use the latest Jenkins plugin build (if unreleased, use the latest HPI file. See notes about installing an HPI, below)
 - create a Freestyle or Pipeline project (Freestyle is easier/quicker)
 - click *Configure* (left side)
 - *Source Code Management section:* click "git"; URL: `https://github.com/tammyhasenzahl/test-git-branch/`; and Branch Specifier: `*/break-the-analysis`
